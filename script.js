@@ -27,12 +27,14 @@ boxs.forEach((box) => {
     box.addEventListener('click', () => {
         if (playX){
             box.innerText = "x";
-            turn.innerText = "O's Turn";
+            turn.innerText = "X's Turn";
             playX = false;
+            turn.innerText = "0's Turn";
             } else {
             box.innerText = "o";
-            turn.innerText = "X's Turn";
+            turn.innerText = "O's Turn";
             playX = true
+            turn.innerText = "X's Turn";
         }
         click_sound.currentTime = 0;
         click_sound.play();
