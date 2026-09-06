@@ -29,12 +29,10 @@ boxs.forEach((box) => {
             box.innerText = "x";
             turn.innerText = "O's Turn";
             playX = false;
-            turn.innerText = "X's Turn";
             } else {
             box.innerText = "o";
             turn.innerText = "X's Turn";
             playX = true
-            turn.innerText = "O's Turn";
         }
         click_sound.currentTime = 0;
         click_sound.play();
